@@ -18,6 +18,7 @@
 <body>
     <div class="main">
 
+        <!-- SIDEBAR -->
         <div class="sidebar">
 
             <div class="nav">
@@ -33,9 +34,7 @@
             </div>
 
             <div class="lib">
-
                 <div class="header">
-
                     <div class="ico">
                         <img src="./assets/library_icon.png" alt="">
                         <a href="#">Library</a>
@@ -45,7 +44,6 @@
                         <i class="fa-solid fa-plus"></i>
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
-
                 </div>
 
                 <div class="boxes">
@@ -54,77 +52,138 @@
                         <div class="box-2">It's easy We'll help you</div>
                         <button type="button">Create a playlist</button>
                     </div>
+
                     <div class="box">
                         <div class="box-1">Let's find some podcasts to follow</div>
                         <div class="box-2">We'll keep you updated on new episodes</div>
                         <button type="button">Browse podcasts</button>
                     </div>
                 </div>
+            </div>
 
-            </div> <!-- end .lib -->
+        </div> <!-- END SIDEBAR -->
 
-        </div> <!-- end .sidebar -->
 
+
+        <!-- MAIN CONTENT -->
         <div class="main-content">
+
             <div class="nav-bar">
                 <div class="nav-buttons" style="background-color: #121212;">
-                     <i class="fa-solid fa-angle-left" style="background-color: #121212;"></i>
-                    <i class="fa-solid fa-angle-right" style="background-color: #121212;"></i>
+                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-angle-right"></i>
                 </div>
+
                 <div class="nav-buttons" style="background-color: #121212;">
                     <button type="button" class="premium">explore premium</button>
                     <button type="button"><i class="fa-solid fa-download"></i>install app</button>
-                    <i class="fa-regular fa-user" style="background-color: white; color: black; height: 1.7rem; width: 1.7rem; border-radius: 1rem;"></i>
+                    <i class="fa-regular fa-user" 
+                       style="background-color: white; color: black; height: 1.7rem; width: 1.7rem; border-radius: 1rem;">
+                    </i>
                 </div>
             </div>
 
-             <h1>Recently Played</h1>
-           <div class="card-container">
-            <div class="card">
-                <img src="./assets/card1img.jpeg" alt="">
-                <p>Top 50 - Global</p>
-                <p>your daily updates of the most played tracks...</p>
+            <h1>Recently Played</h1>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" alt="">
+                    <p>Top 50 - Global</p>
+                    <p>Your daily updates of the most played tracks...</p>
+                </div>
             </div>
-           </div>
 
-               <h1>Spotify original & exclusive podcasts</h1>
-           <div class="card-container">
-            <div class="card">
-                <img src="./assets/card2img.jpeg" alt="">
-                <p>song 1 </p>
-                <p>song info 1</p>
-            </div>
-             <div class="card">
-                <img src="./assets/card3img.jpeg" alt="">
-                <p>song 2</p>
-                <p>song info 2</p>
-            </div>
-             <div class="card">
-                <img src="./assets/card4img.jpeg" alt="">
-                <p>song 3</p>
-                <p>song info 3</p>
-            </div>
-           </div>
+            <h1>Spotify original & exclusive podcasts</h1>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/card2img.jpeg" alt="">
+                    <p>Song 1</p>
+                    <p>Song info 1</p>
+                </div>
 
-               <h1>Top charts</h1>
-           <div class="card-container">
-            <div class="card">
-                <img src="./assets/card6img.jpeg" alt="">
-                <p>Top 50 - Global-indian</p>
-                <p>indian popular songs playlist</p>
-            </div>
-             <div class="card">
-                <img src="./assets/card5img.jpeg" alt="">
-                <p>Top 50 - Global</p>
-                <p>golbaally famous songs</p>
-            </div>
-           </div>
-           <div class="footer">
-            <div class="seperator"></div>
-           </div>
-        </div>
-        <div class="music-player">music-player</div>
+                <div class="card">
+                    <img src="./assets/card3img.jpeg" alt="">
+                    <p>Song 2</p>
+                    <p>Song info 2</p>
+                </div>
 
-    </div> <!-- end .main -->
+                <div class="card">
+                    <img src="./assets/card4img.jpeg" alt="">
+                    <p>Song 3</p>
+                    <p>Song info 3</p>
+                </div>
+            </div>
+
+            <h1>Top charts</h1>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/card6img.jpeg" alt="">
+                    <p>Top 50 - Global (Indian)</p>
+                    <p>Indian popular songs playlist</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card5img.jpeg" alt="">
+                    <p>Top 50 - Global</p>
+                    <p>Globally famous songs</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="seperator"></div>
+            </div>
+
+        </div> <!-- END MAIN CONTENT -->
+
+
+
+        <!-- MUSIC PLAYER -->
+        <div class="music-player">
+            <div class="current-play" style="display: flex;">
+                <div class="song-info" style="display: flex;">
+                    <div><img src="./assets/card2img.jpeg" alt=""></div>
+                    <div>
+                        <div style="font-weight: 700;">DayLight</div>
+                        <p style="font-size: smaller; font-weight: 300;">David Kushner</p>
+                    </div>
+                </div>
+             <div class="icons-left">
+                 <div class="icon-1">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="icon-2">
+                    <i class="fa-solid fa-list"></i>
+                </div>
+             </div>
+            </div>
+
+            <div class="playback-bar">
+                <div class="control-buttons">
+                    <img src="./assets/player_icon1.png" alt="" class="control-icon">
+                    <img src="./assets/player_icon2.png" alt="" class="control-icon">
+                    <img src="./assets/player_icon3.png" alt="" class="control-icon" style="height: 2rem; opacity: 1;" id="playpause">
+                    <img src="./assets/player_icon4.png" alt="" class="control-icon">
+                    <img src="./assets/player_icon5.png" alt="" class="control-icon">
+                </div>
+                <div class="progress-bar">
+                    <div>0:00</div>
+                    <div style="width: 70%;"><input type="range" name="" id=""></div>
+                    <div>3:33</div>
+                </div>
+            </div>
+
+            <div class="controllers">
+                <div class="icon-right"><i class="fa-solid fa-mobile"></i></div>
+                <div class="icon-right"><i class="fa-solid fa-microphone"></i></div>
+                <div class="icon-right"><i class="fa-solid fa-list-check"></i></div>
+                <div class="icon-right"><i class="fa-solid fa-computer"></i></div>
+                <div class="volume">
+                  <div><i class="fa-solid fa-volume-high"></i></div>
+                 <div> <input type="range" name="" id=""></div>
+                </div>
+            </div>
+        </div> <!-- END MUSIC PLAYER -->
+
+    </div> <!-- END MAIN -->
 </body>
 </html>
